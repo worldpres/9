@@ -1,6 +1,8 @@
 $szary : #c4c4c5;
 $niebieski : #1a2733;
 $ciemnySzary: #3a3a3a;
+$margines : 20px;
+$czerwony: #D07C7C;
 
 
 body::-webkit-scrollbar {
@@ -39,6 +41,57 @@ html, body{
 }
 
 header{
+    background-image: url("../img/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border-top: $margines solid #fff;
+    border-left: $margines solid #fff;
+    border-right: $margines solid #fff;
+    .header{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        background: #fff;
+        padding-top: $margines;
+        padding-bottom: $margines;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-bottom: 0px;
+        a{
+            color: $ciemnySzary;
+            display: inline-block;
+            margin-right: 40px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 0.9em;
+            letter-spacing: 0.05em;
+            &:after{
+                content: "";
+                display: block;
+                width: 0%;
+                height: 2px;
+                transition: all 0.5s;
+                background: $czerwony;
+            }
+            &:hover:after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+main{
+    min-height: 100vh;
 }
 
 footer{
