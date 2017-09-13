@@ -1,0 +1,45 @@
+$szary : #c4c4c5;
+$niebieski : #1a2733;
+$ciemnySzary: #3a3a3a;
+
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: $szary;
+}
+body::-webkit-scrollbar-track {
+	background-color: $szary;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: $niebieski;
+}
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    text-align: center;
+    background-color: $szary;
+    .progress{
+        background-color: $szary;
+        .indeterminate{
+            background-color: $niebieski;
+        }
+    }
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: $ciemnySzary;
+}
+
+header{
+}
+
+footer{
+}
