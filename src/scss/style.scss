@@ -37,6 +37,7 @@ html, body{
     width: 100%;
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
     color: $ciemnySzary;
 }
 
@@ -90,6 +91,7 @@ header{
             margin-top: 20vh;
             font-size: 40px;
             font-weight: 100;
+            cursor: pointer;
         }
     }
     .menu{
@@ -336,6 +338,18 @@ main{
         }
         &:hover{
             opacity: 0.8;
+        }
+    }
+    #follow-me{
+        .fa{
+            font-size: 20px;
+            display: inline-block;
+            padding: 20px;
+            background: $czerwony;
+            border-radius: 50%;
+            width: 60px;
+            color: #fff;
+            margin: 10px;
         }
     }
 }
