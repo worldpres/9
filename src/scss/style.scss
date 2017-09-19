@@ -296,7 +296,22 @@ main{
                 width: 100%;
             }
         }
-    } 
+    }
+    .carousel.carousel-slider{
+        height: 230px;
+    }
+    .carousel.carousel-slider .carousel-item{
+        min-height: unset;
+        p:first-child{
+            font-size: 18px;
+        }
+    }
+    .carousel ul.indicators li.indicator-item {
+        background-color: $szary;
+    }
+    .carousel ul.indicators li.active {
+        background-color: rgb(233, 87, 63) !important;
+    }
 }
 
 footer{

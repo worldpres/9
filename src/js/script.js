@@ -1,7 +1,7 @@
 jQuery(window).on("load", function () {
     jQuery(".preloader").fadeOut();
 });
-/*
+
 jQuery(document).ready(function () {
     jQuery('.carousel').carousel({
         indicators: true,
@@ -11,6 +11,7 @@ jQuery(document).ready(function () {
     });
     setInterval(function () { $('.carousel').carousel('next'); }, 4000);
 
+    /*
     jQuery(".scroll-icon").click(function () {
         jQuery('html, body').animate({
             scrollTop: jQuery("#aboutus").offset().top
@@ -18,5 +19,5 @@ jQuery(document).ready(function () {
             //nothing :P
         });
     });
+    */
 });
-*/
