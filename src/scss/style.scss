@@ -1,19 +1,19 @@
 $szary : #c4c4c5;
 $niebieski : #1a2733;
-$ciemnySzary: #3a3a3a;
+$ciemnySzary: #595959;
 $margines : 20px;
 $czerwony: #D07C7C;
 
 
 body::-webkit-scrollbar {
 	width: 10px;
-	background-color: $szary;
+	background-color: #fff;
 }
 body::-webkit-scrollbar-track {
-	background-color: $szary;
+	background-color: #fff;
 }
 body::-webkit-scrollbar-thumb {
-	background-color: $niebieski;
+    background-color: $czerwony;
 }
 
 .preloader {
@@ -61,16 +61,47 @@ header{
         height: 100%;
         width: 100%;
         text-align: center;
+        color: #fff;
+        &>div{
+            width: 100%;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 50px;
+            position: relative;
+            &:after{
+                content: "";
+                display: block;
+                width: 10%;
+                height: 3px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: all 0.5s;
+                background: #fff;
+            }
+        }
+        h5{
+            margin-top: 50px;
+            font-weight: 300;
+        }
+        .arrow_down{
+            color: #fff;
+            margin-top: 20vh;
+            font-size: 40px;
+            font-weight: 100;
+        }
     }
     .menu{
         background: #fff;
-        padding-top: $margines;
-        padding-bottom: $margines;
+        padding-top: 20px;
+        padding-bottom: 15px;
         position: absolute;
         bottom: 0px;
         left: 0px;
         width: 100%;
         margin-bottom: 0px;
+        border-bottom: 1px solid $szary;
         a{
             color: $ciemnySzary;
             display: inline-block;
@@ -97,6 +128,28 @@ header{
 
 main{
     min-height: 100vh;
+    color: $ciemnySzary;
+    h5{
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        margin-top: 20vh;
+        padding-bottom: 20px;
+        text-align: center;
+        &:after{
+            content: "";
+            display: block;
+            margin-top: 10px;
+            width: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 3px;
+            transition: all 0.5s;
+            background: $czerwony;
+        }
+    }
+    p{
+        font-weight: 300;
+    }
 }
 
 footer{
