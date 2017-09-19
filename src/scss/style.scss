@@ -308,6 +308,8 @@ main{
     }
     .carousel ul.indicators li.indicator-item {
         background-color: $szary;
+        width: 10px;
+        height: 10px;
     }
     .carousel ul.indicators li.active {
         background-color: rgb(233, 87, 63) !important;
