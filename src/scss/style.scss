@@ -314,6 +314,30 @@ main{
     .carousel ul.indicators li.active {
         background-color: rgb(233, 87, 63) !important;
     }
+    .watch-my-video{
+        background-image: url("../img/my_video.png");
+        background-position: center center;
+        background-size: cover;
+        margin: $margines;
+        height: 500px;
+        transition: all 0.3s;
+        cursor: pointer;
+        div:nth-child(1){
+            font-size: 40px;
+            margin-top: 10px;
+            color: #000;
+            font-weight: 100;
+        }
+        div:nth-child(1):before,
+        div:nth-child(1):after,
+        .caption:before,
+        .caption:after{
+            border-color: #000;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+    }
 }
 
 footer{
