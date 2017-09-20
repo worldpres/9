@@ -104,6 +104,14 @@ header{
         width: 100%;
         margin-bottom: 0px;
         border-bottom: 1px solid $szary;
+        &.fixed{
+            position: fixed;
+            top: 0px;
+            height: 60px;
+            z-index: 10;
+            width: calc(100% - (#{$margines})*2 );
+            left: $margines;
+        }
         a{
             color: $ciemnySzary;
             display: inline-block;
@@ -426,6 +434,9 @@ main{
 
 footer{
     color: $szary;
+    .arrow_up{
+        cursor: pointer;
+    }
     a{
         color: $szary;
     }
